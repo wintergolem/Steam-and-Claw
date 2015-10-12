@@ -1,0 +1,49 @@
+Mono path[0] = 'C:/Users/Steven/Documents/GitHub/Steam-and-Claw/WarmaHordes Game/build_Data/Managed'
+Mono path[1] = 'C:/Users/Steven/Documents/GitHub/Steam-and-Claw/WarmaHordes Game/build_Data/Mono'
+Mono config path = 'C:/Users/Steven/Documents/GitHub/Steam-and-Claw/WarmaHordes Game/build_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Steven/Documents/GitHub/Steam-and-Claw/WarmaHordes Game/build_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55482
+Multi-casting "[IP] 10.0.0.13 [Port] 55482 [Flags] 3 [Guid] 308298085 [EditorId] 3062638397 [Version] 1048832 [Id] WindowsPlayer(WinterAura) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [10.0.0.13:55482]...
+PlayerConnection accepted from [10.0.0.13] handle:0x1f8
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56085
+PlayerConnection already initialized - listening to [10.0.0.13:55482]
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 660   (ID=0x11c0)
+    Vendor:   NVIDIA
+    VRAM:     1986 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.095 seconds
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\build_Data\Managed\System.dll (this message is harmless)
+Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
+NullReferenceException: Object reference not set to an instance of an object
+  at FactionManager.CheckFactionExist (System.String sFactionName) [0x0000d] in C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\Assets\Scripts\Test\Overworld\FactionManager.cs:69 
+  at FactionManager.CheckFactionDoesntExist (System.String sFactionName) [0x00000] in C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\Assets\Scripts\Test\Overworld\FactionManager.cs:78 
+  at FactionManager.AddFaction (System.String sFactionName) [0x00000] in C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\Assets\Scripts\Test\Overworld\FactionManager.cs:24 
+  at Blackboard.Start () [0x00011] in C:\Users\Steven\Documents\GitHub\Steam-and-Claw\WarmaHordes Game\Assets\Scripts\Test\Overworld\Blackboard.cs:46 
+ 
+(Filename: C:/Users/Steven/Documents/GitHub/Steam-and-Claw/WarmaHordes Game/Assets/Scripts/Test/Overworld/FactionManager.cs Line: 69)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 12ec -> priority: 1 
+Waiting for finish

@@ -1,0 +1,7 @@
+*Place
+	-Village
+		^Recruit
+		^Buy Supplies
+		^Take Hostile Action
+	-Forts
+	-Towns
