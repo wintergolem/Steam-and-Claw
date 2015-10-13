@@ -7,14 +7,13 @@ public delegate void PanelClosingHandler();
 
 public class PanelCustom : MonoBehaviour {
 
-    public Text tPlaceName;
 
     //public functions
-    public event PanelClosingHandler PanelClosing;
+    //public event PanelClosingHandler PanelClosing;
 
     public void Close()
     {
-        PanelClosing();
+        //PanelClosing();
         gameObject.SetActive(false);
     }
 
@@ -29,6 +28,6 @@ public class PanelCustom : MonoBehaviour {
 
     void OnEnable()
     {
-        tPlaceName.text = GameManager.placeInfo.sName;
+        
     }
 }

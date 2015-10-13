@@ -2,16 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public struct RaidedCounter
-{
-    public float fTimeRaided;
-}
-
-public struct InfoHolder
+public struct InfoHolder  //for PlaceInfoHolder
 {
     public string sPlaceName;
     public bool bRaided;
+    public bool bRecruiting;
     public float fTimeRaided;
+    public float fTimeRecruiting;
+    public int iRecruitAvailable;
 }
 
 public class PlaceInfoHolder

@@ -8,7 +8,7 @@ public class GameManagerObject : MonoBehaviour {
 
     void Awake()
     {
-        Debug.Log("Awake called");
+        //Debug.Log("Awake called");
         if (gameManager == null && !GameManager.bSet)
         {
             gameManager = new GameManager();

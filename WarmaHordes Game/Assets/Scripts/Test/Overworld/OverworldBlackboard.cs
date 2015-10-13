@@ -12,6 +12,7 @@ public class OverworldBlackboard : MonoBehaviour {
 
     public string sPlaceNameHolder;
     public bool bBurn;
+    public bool bRecruit;
 
     #region private funcs
     void Start()
@@ -29,6 +30,19 @@ public class OverworldBlackboard : MonoBehaviour {
                 {
                     p.TakeHostileAction();
                     bBurn = false;
+                    break;
+                }
+            }
+        }
+
+        if (bRecruit)
+        {
+            foreach (Place p in places)
+            {
+                if (p.sName == sPlaceNameHolder)
+                {
+                    p.Recruited();
+                    bRecruit = false;
                     break;
                 }
             }
@@ -53,6 +67,17 @@ public class OverworldBlackboard : MonoBehaviour {
         }
     }
 
+    void SentVillageRecruitMessage(string sPlaceName)
+    {
+        foreach (Place p in places)
+        {
+            if (p.name == sPlaceName)
+            {
+                p.TakeHostileAction();
+            }
+        }
+    }
+
     #endregion
 
     public static void EnterTown( Place place )
@@ -63,6 +88,11 @@ public class OverworldBlackboard : MonoBehaviour {
     public static void BurnVillage(string sPlaceName)
     {
         instance.bBurn = true;
+        instance.sPlaceNameHolder = sPlaceName;
+    }
+
+    public static void RecruitFromVillage(string sPlaceName)
+    {
         instance.sPlaceNameHolder = sPlaceName;
     }
 

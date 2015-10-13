@@ -6,12 +6,9 @@ public class ButtonCustom : MonoBehaviour
 {
 
     public Text text;
-    public bool bDisableAfterClick = false; //true = ensure that button can only be pressed once per panel load
     public PanelCustom Panel;
 
     //private variables
-    bool bDisableTilPanelClose = false;
-    Button button;
 
     //public functions
     public void ChangeText(string sNewText)
@@ -25,8 +22,6 @@ public class ButtonCustom : MonoBehaviour
     //private functions
     void Start()
     {
-        button = GetComponent<Button>();
-        Panel.PanelClosing += new PanelClosingHandler(PanelClosing);
     }
 
     void Update()
@@ -34,13 +29,5 @@ public class ButtonCustom : MonoBehaviour
        
     }
 
-    void PanelClosing()
-    {
-        if (bDisableTilPanelClose )
-        {
-            bDisableTilPanelClose = true;
-            button.interactable = true; //should only affect button, button will be active next panel enable
-        }
-    }
 
 }

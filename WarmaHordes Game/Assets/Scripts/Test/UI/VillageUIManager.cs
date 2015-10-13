@@ -49,9 +49,10 @@ public class VillageUIManager : UIManager{
 
     void Start ()
     {
-        if (GameManager.placeInfo.bRaided)
-            ActiveDialog = Dialogs.Raided;
+       
         base.Start();
+        if (GameManager.placeInfo.bRaided)
+            TriggerNewPanel((int)Dialogs.Raided);
     }
     void Update()
     {

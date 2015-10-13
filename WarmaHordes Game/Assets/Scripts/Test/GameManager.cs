@@ -109,6 +109,7 @@ public class GameManager {
         {
             partyManager.AddToParty(ToOverworldInfo.iPartyMembersToAdd);
             ToOverworldInfo.bHasTroopsToAdd = false;
+            OverworldBlackboard.RecruitFromVillage(placeInfo.sName);
         }
     }
 
@@ -121,7 +122,7 @@ public class GameManager {
     public static void SetPlaceInfo( Place place)
     {
         placeInfo.sName = place.sName;
-        placeInfo.iRecruit = place.iRecruitAmount;
+        placeInfo.iRecruit = place.iRecruitAvailable;
         placeInfo.iRecruitCost = place.iRecruitCost;
         placeInfo.bRaided = place.bRaided;
     }
