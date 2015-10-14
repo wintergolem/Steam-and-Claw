@@ -34,6 +34,13 @@ public class VillageUIManager : UIManager{
    
     public void AcceptRecruit()
     {
+        //check if player can afford recruits
+        if( GameManager.partyManager.SpendGold(GameManager.placeInfo.iRecruitCost) != 0)
+        {
+            //disable recruit button
+            //enable "you dont enough gold text"
+            return;
+        }
         GameManager.PrepareToTransferRecruits();
         ToMain();
     }

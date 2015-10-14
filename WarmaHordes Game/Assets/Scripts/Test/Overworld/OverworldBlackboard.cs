@@ -93,6 +93,7 @@ public class OverworldBlackboard : MonoBehaviour {
 
     public static void RecruitFromVillage(string sPlaceName)
     {
+        instance.bRecruit = true;
         instance.sPlaceNameHolder = sPlaceName;
     }
 

@@ -18,7 +18,11 @@ public class Place : MonoBehaviour
         }
     }
     public int iRecruitAvailable = 10;     //get set should be made to prevent outside tempering
-    public int iRecruitCost = 10;       //???
+    public int iRecruitCost
+    {
+        get { return iRecruitAvailable * m_iCostPerRecruit; }
+        set { Debug.LogError("Cannot set the iRecruitCost variable"); }
+    }
     public int iMaxRecruits = 10;       //???
     public string sFactionName;         //???
     public string sName;                //???
@@ -30,9 +34,10 @@ public class Place : MonoBehaviour
     bool m_bRaided = false;
     bool m_bRecruiting = false;
     static float m_fRaidRecoveryTime = 10;  //in seconds
-    static float m_fRecruitTime = 100000;       //in seconds
-    float m_fTimeRaided;
-    float m_fTimeRecruiting;
+    static float m_fRecruitTime = 10;       //in seconds
+    float m_fTimeRaided;                    //total time spent in Raided state (in seconds)
+    float m_fTimeRecruiting;                //total time spent in Recruiting state (in seconds)
+    int m_iCostPerRecruit = 4;              //plan to make this based on village economy
 
     #endregion
     //public Functions
